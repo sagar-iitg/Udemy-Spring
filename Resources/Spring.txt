@@ -1,0 +1,9 @@
+
+----Inversion Of Control
+OutSource an Object factory
+The approach of outsourcing the construction and management of objects.
+
+App Should be configurable
+
+Easily change the code
+
