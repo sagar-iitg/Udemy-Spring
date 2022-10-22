@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:context="http://www.springframework.org/schema/context"
@@ -9,28 +10,21 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
     <!-- bean definitions here -->
     
-    <context:annotation-config/>
+    <!-- Define your beans here -->
+   <context:property-placeholder location="classpath:student-info.properties"/>
     
-    
-   <bean id="humanHeart" class="com.sk.Heart">
-   
-   
-   <property name="nameOfAnimal" value="Human"></property>
-   <property name="noOfHeart" value="1"></property>
-   </bean>
-     
-   <bean id="octopusHeart" class="com.sk.Heart">
-   
-   
-   
-   <property name="nameOfAnimal" value="Octopus"></property>
-   <property name="noOfHeart" value="3"></property>
-   
-   
-   </bean>
-       <!-- <bean id="heart" class="com.sk.Heart"/> -->
-  <bean id="human" class="com.sk.Human"/>
+<bean  id="student" class="com.sk.Student">
 
+<property name="rollNo" value="${student.rollNo}"></property>
+<property name="name" value="${student.name}"></property>
+<property name="hobbies" value="${student.hobbies}"></property>
+</bean>
+  
+    
+   
 </beans>
+
+
+
 
 
