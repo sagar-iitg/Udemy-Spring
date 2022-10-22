@@ -16,19 +16,14 @@
     
     
     <!-- Define your beans here -->
-  <context:property-placeholder location="classpath:student-info.properties"/>
+  <context:property-placeholder location="classpath:application.properties"/>
    
    
    
    
    
-<bean  id="student" class="com.sk.Student">
-<!-- 
-<property name="rollNo" value="${student.rollNo}"></property>
-<property name="name" value="${student.name}"></property>
-<property name="hobbies" value="${student.hobbies}"></property>
+<bean  id="con" class="com.sk.JDBCConnection">
 
- -->
  
  
 </bean>
