@@ -89,6 +89,55 @@ AutoWiring is not possible for primitive or String type
 Similar as xml configuration file (beans.xml)
 @ComponentScan(basePackage="com.sk")
 
+Load Properties files in spring config files
+
+
+   <context:property-placeholder  location="classpath:sport.properties"/>
+   
+
+
+Bean Life cycle:
+
+Default Scope of bean is: Singleton
+
+What is Singleton?
+
+Spring container creates only one instance of bean, by default
+It is cached in memory
+All request for the bean- will return a shared reference to the same bean.
+
+Spring scopes:
+
+Singleton:
+Creates a single shared instance of the bean.-- default scopes
+
+prototype:
+creates a new bean instance for each container request.
+
+request:
+scoped to an http web request.only used for web apps.
+
+session:
+scoped to an HTTP web session. Only used for web-apps
+
+global-session
+scoped to global HTTP web sessions. only used for web apps.
+
+Bean-lifecycle
+
+
+Container Started -> Bean Instantiated -> 
+Dependencies Injected ->Internal Spring processing ->
+Our Custom init method -> custom Destroy method
+-> stop.
+
+
+
+attributes in xml configuration
+
+init-method
+destory-method
+
 
 
 

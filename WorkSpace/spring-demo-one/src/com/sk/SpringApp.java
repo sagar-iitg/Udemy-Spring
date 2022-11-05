@@ -30,8 +30,8 @@ public class SpringApp {
 		System.out.println(theCoach.getDailyFortune());
 		
 		//close the context
-		
-		context.close();
+		context.registerShutdownHook();
+		//context.close();
 	}
 
 }

@@ -21,6 +21,7 @@ public class CricketCoach implements Coach {
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
+		System.out.println("please do steching // chhakar lagao pura field ko");
 		return "Cricket coach";
 	}
 

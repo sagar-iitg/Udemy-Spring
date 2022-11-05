@@ -15,6 +15,14 @@ public class FootballCoach implements Coach {
 		System.out.println("Football coach :inside no -arg constructor");
 		// TODO Auto-generated constructor stub
 	}
+	public FootballCoach(FortuneService fortuneService) {
+		super();
+		
+		this.fortuneService=fortuneService;
+		
+		//System.out.println("Football coach :inside no -arg constructor");
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 	

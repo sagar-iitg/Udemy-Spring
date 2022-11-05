@@ -13,7 +13,9 @@ public class Driver {
 		
 		Student s=context.getBean("student",Student.class);
 		
-		System.out.println(s.fun());
+		System.out.println("app name-----"+context.getApplicationName()+
+				context.getDisplayName()+"\n"+"startup"+context.getStartupDate());
+		//System.out.println(s.fun());
 		
 		
 	}
