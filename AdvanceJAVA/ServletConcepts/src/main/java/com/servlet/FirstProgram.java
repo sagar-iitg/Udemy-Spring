@@ -34,7 +34,7 @@ public class FirstProgram implements Servlet{
 		
 		res.setContentType("text/html");
 		PrintWriter out=res.getWriter();
-		out.println("Welcome to servet");
+		out.println("Welcome to servlet");
 		out.println("Today"+ new Date().toString());
 		
 	}
